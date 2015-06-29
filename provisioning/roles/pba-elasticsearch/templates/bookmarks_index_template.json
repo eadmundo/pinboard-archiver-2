@@ -1,0 +1,60 @@
+{
+    "bookmarks_index_template": {
+        "template": "*_bookmarks",
+        "mappings": {
+            "bookmark": {
+                "_source": {
+                    "enabled": true
+                },
+                "_all": {
+                    "enabled": true
+                },
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "extended": {
+                        "type": "string"
+                    },
+                    "href": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    },
+                    "meta": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    },
+                    "hash": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    },
+                    "time": {
+                        "type": "date",
+                        "format": "date_time_no_millis"
+                    },
+                    "shared": {
+                        "type": "boolean"
+                    },
+                    "toread": {
+                        "type": "boolean"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "string",
+                        "index": "not_analyzed",
+                        "index_name": "tag"
+                    },
+                    "content": {
+                        "type": "string"
+                    },
+                    "archive_href": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    }
+                }
+            }
+        }
+    }
+}

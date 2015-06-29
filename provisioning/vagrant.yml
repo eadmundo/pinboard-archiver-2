@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+
+- include: search.yml
+  vars:
+    elasticsearch_number_of_shards: 1
+    elasticsearch_number_of_replicas: 0
+
+- include: worker.yml
+# - include: webserver.yml
+- include: db.yml
+  vars:
+    dbuser: vagrant
+    dbpassword: vagrant
+    development: true

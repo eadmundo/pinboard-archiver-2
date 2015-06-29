@@ -1,0 +1,6 @@
+---
+
+- name: bookmarks index template
+  template: src=bookmarks_index_template.json dest=/etc/elasticsearch/templates/bookmarks_index_template.json
+  sudo: yes
+  notify: restart elasticsearch

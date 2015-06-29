@@ -1,0 +1,18 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/2.7.9 Darwin/14.3.0]
+    method: GET
+    uri: http://localhost:9200//fake_user_bookmarks/bookmark/78f80a45914699c060ba44dbdf36f4c9?fields=href
+  response:
+    body: {string: !!python/unicode '{"error":"IndexMissingException[[fake_user_bookmarks]
+        missing]","status":404}'}
+    headers:
+      content-length: ['77']
+      content-type: [application/json; charset=UTF-8]
+    status: {code: 404, message: Not Found}
+version: 1

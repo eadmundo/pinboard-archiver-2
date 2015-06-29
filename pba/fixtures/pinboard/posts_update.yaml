@@ -1,0 +1,26 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/2.7.9 Darwin/14.3.0]
+    method: GET
+    uri: https://api.pinboard.in/v1/posts/update?format=json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi1ISSxJjS/JzE1VslIyMjA01TUw0zWwCDEysDIxszIxiVKq5eLkAgDvaNRC
+        KQAAAA==
+    headers:
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['61']
+      content-type: [text/plain; charset=utf-8]
+      date: ['Tue, 09 Jun 2015 07:52:31 GMT']
+      keep-alive: ['timeout=5, max=100']
+      server: [Apache/2.2.22 (Ubuntu)]
+      vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1
